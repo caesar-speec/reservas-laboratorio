@@ -18,7 +18,7 @@ Supuestos: entrada estricta `YYYY-MM-DDTHH:MM`, interpretada como hora local de 
 
 Alcance: uso local por consola; sin autenticación, nube, notificaciones ni interfaz gráfica. Criterios técnicos comprobados en [VERIFICACION.md](docs/VERIFICACION.md); revisión humana cerrada por confirmación del usuario el 28/10/2026.
 
-Evolución: el commit existente `63c0c77b83650aac9cfcb7c937254e3403c98d5d` conserva la estructura y especificación breve inicial. Puede consultarse con `git show 63c0c77:README.md`. La consigna posterior autorizó implementar el sistema; su síntesis está en [ESPECIFICACION.md](docs/ESPECIFICACION.md). Los cambios de esta sesión aún no tienen commit; [PROGRESO.md](docs/PROGRESO.md) registra las etapas. No se atribuyen commits futuros a hechos ya versionados.
+Evolución: el commit existente `63c0c77b83650aac9cfcb7c937254e3403c98d5d` conserva la estructura y especificación breve inicial. Puede consultarse con `git show 63c0c77:README.md`. La consigna posterior autorizó implementar el sistema; su síntesis está en [ESPECIFICACION.md](docs/ESPECIFICACION.md). La implementación final quedó registrada en el commit `65ee4b5`; [PROGRESO.md](docs/PROGRESO.md) registra las etapas. No se atribuyen commits futuros a hechos ya versionados.
 
 ## Solución
 
@@ -116,7 +116,7 @@ python tests/registrar_evidencia.py demo
 
 La suite usa únicamente bases temporales y ejecuta procesos separados para verificar la persistencia. La demo también usa una base temporal que se elimina al terminar y guarda la salida en `docs/evidencias/demo.txt`. Última suite ejecutada: 21 pruebas, 21 aprobadas, 0 fallidas. Evidencia y correspondencia con requisitos en [VERIFICACION.md](docs/VERIFICACION.md).
 
-Limitaciones: prototipo con horas civiles locales, sin conversión entre zonas ni interpretación de offsets, sin gestión de inventario y sin mecanismos de producción distribuidos. No quedan funcionalidades obligatorias pendientes según las comprobaciones del agente; la revisión humana está cerrada; nuevos commits y publicación siguen pendientes.
+Limitaciones: prototipo con horas civiles locales, sin conversión entre zonas ni interpretación de offsets, sin gestión de inventario y sin mecanismos de producción distribuidos. No quedan funcionalidades obligatorias pendientes según las comprobaciones del agente; la revisión humana está cerrada; la implementación está registrada en `65ee4b5` y la publicación sigue pendiente.
 
 ## Preparación del agente
 
@@ -138,4 +138,4 @@ Los avances se registraron durante las etapas en [PROGRESO.md](docs/PROGRESO.md)
 
 [DELEGACION.md](docs/DELEGACION.md) documenta tres etapas reales delegadas a Codex por la consigna: inventario/disponibilidad; creación/validaciones; cancelación/persistencia/pruebas. Incluye instrucciones recibidas, archivos, comprobaciones y el cierre de las revisiones humanas confirmado por el usuario. El usuario aceptó expresamente los tres episodios por la suite de 21 pruebas aprobadas, el inventario correcto y la conservación del historial al abrir otra terminal; reconoció que los rechazos manuales correspondían a reservas ya existentes. La decisión y su evidencia están registradas en DELEGACION.md. No son tres conversaciones ficticias ni intervenciones de tres subagentes.
 
-Único commit existente comprobado: `63c0c77b83650aac9cfcb7c937254e3403c98d5d`. No se crearon commits ni se atribuyeron aprobaciones. [ENTREGA.md](docs/ENTREGA.md) contiene propuestas de commits, comandos para registrar el estado final, pasos de publicación y acceso en GitHub y un borrador de correo con asunto «Challenge IA» que no se envió.
+Commits comprobados: estructura inicial `63c0c77b83650aac9cfcb7c937254e3403c98d5d` e implementación final `65ee4b5`. Las decisiones humanas se registran por separado en DELEGACION.md. [ENTREGA.md](docs/ENTREGA.md) contiene propuestas de commits, comandos para registrar el estado final, pasos de publicación y acceso en GitHub y un borrador de correo con asunto «Challenge IA» que no se envió.

@@ -96,3 +96,11 @@ Queda completado el requisito de motivos y comprobaciones humanas de los tres ep
 ## Preparación de versionado y publicación autorizada — 2026-10-28
 
 El usuario solicitó guardar el estado final en Git, publicar y verificar acceso. Suite reejecutada antes del commit: 21 pruebas OK, salida 0, mediante Python temporal 3.12.10. Rama main; sin remoto configurado al iniciar. Se excluyen tmp/ y las bases SQLite. Se prepara un único commit del estado acumulado, sin simular commits históricos. Publicación y comprobación de acceso todavía no ejecutadas: se solicitó conexión de GitHub. El envío de correo sigue fuera de esta acción.
+
+## Estado actualizado de Git — 2026-10-28
+
+Se creó realmente el commit `65ee4b5` en main, «feat: sistema local de reservas con pruebas y documentacion», con la implementación, pruebas y documentación final. El commit inicial 63c0c77 se conserva. Las afirmaciones anteriores sobre cambios sin commit describen el estado previo y quedan superadas por este registro.
+
+Verificación previa: 21 pruebas OK. La revisión del índice incluyó todos los archivos nuevos; git diff --cached --check detectó espacios finales y líneas vacías en las transcripciones originales etapa1.txt y etapa2.txt, conservadas sin alterar. No se incluyeron bases SQLite, cachés ni tmp/.
+
+Publicación: todavía no ejecutada. No hay remoto configurado y se requiere conexión de GitHub para crear o seleccionar el repositorio y verificar acceso. No se envió correo. La evidencia humana posterior está en evidencias/revision-humana.txt y su aceptación consta en DELEGACION.md; las menciones históricas a falta de pruebas humanas ya están superadas.

@@ -66,3 +66,11 @@ Evidencia de las comprobaciones: [salida de terminal aportada por el usuario](ev
 | 3: Cancelación y persistencia | Aceptar: historial conservado al abrir otra terminal y suite aprobada | Mismos cuatro registros y estados en ambas terminales; tests de cancelación, liberación y persistencia en OK; no se atribuye una cancelación manual nueva exitosa |
 
 Queda completado el requisito de motivos y comprobaciones humanas de los tres episodios. Esta aceptación es posterior a las comprobaciones aportadas; no altera los resultados ni crea revisiones retrospectivas ficticias. Los pendientes de commit, publicación y entrega son independientes.
+
+## Estado actualizado de Git — 2026-10-28
+
+Se creó realmente el commit `65ee4b5` en main, «feat: sistema local de reservas con pruebas y documentacion», con la implementación, pruebas y documentación final. El commit inicial 63c0c77 se conserva. Las afirmaciones anteriores sobre cambios sin commit describen el estado previo y quedan superadas por este registro.
+
+Verificación previa: 21 pruebas OK. La revisión del índice incluyó todos los archivos nuevos; git diff --cached --check detectó espacios finales y líneas vacías en las transcripciones originales etapa1.txt y etapa2.txt, conservadas sin alterar. No se incluyeron bases SQLite, cachés ni tmp/.
+
+Publicación: todavía no ejecutada. No hay remoto configurado y se requiere conexión de GitHub para crear o seleccionar el repositorio y verificar acceso. No se envió correo. La evidencia humana posterior está en evidencias/revision-humana.txt y su aceptación consta en DELEGACION.md; las menciones históricas a falta de pruebas humanas ya están superadas.
