@@ -116,7 +116,7 @@ python tests/registrar_evidencia.py demo
 
 La suite usa únicamente bases temporales y ejecuta procesos separados para verificar la persistencia. La demo también usa una base temporal que se elimina al terminar y guarda la salida en `docs/evidencias/demo.txt`. Última suite ejecutada: 21 pruebas, 21 aprobadas, 0 fallidas. Evidencia y correspondencia con requisitos en [VERIFICACION.md](docs/VERIFICACION.md).
 
-Limitaciones: prototipo con horas civiles locales, sin conversión entre zonas ni interpretación de offsets, sin gestión de inventario y sin mecanismos de producción distribuidos. No quedan funcionalidades obligatorias pendientes según las comprobaciones del agente; la revisión humana está cerrada; la implementación está registrada en `65ee4b5` y la publicación sigue pendiente.
+Limitaciones: prototipo con horas civiles locales, sin conversión entre zonas ni interpretación de offsets, sin gestión de inventario y sin mecanismos de producción distribuidos. No quedan funcionalidades obligatorias pendientes según las comprobaciones del agente; la revisión humana está cerrada; la implementación está registrada en `65ee4b5` y la publicación está disponible en https://github.com/caesar-speec/reservas-laboratorio (acceso público comprobado el 28/10/2026).
 
 ## Preparación del agente
 

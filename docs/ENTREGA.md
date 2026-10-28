@@ -92,3 +92,7 @@ Se creó realmente el commit `65ee4b5` en main, «feat: sistema local de reserva
 Verificación previa: 21 pruebas OK. La revisión del índice incluyó todos los archivos nuevos; git diff --cached --check detectó espacios finales y líneas vacías en las transcripciones originales etapa1.txt y etapa2.txt, conservadas sin alterar. No se incluyeron bases SQLite, cachés ni tmp/.
 
 Publicación: todavía no ejecutada. No hay remoto configurado y se requiere conexión de GitHub para crear o seleccionar el repositorio y verificar acceso. No se envió correo. La evidencia humana posterior está en evidencias/revision-humana.txt y su aceptación consta en DELEGACION.md; las menciones históricas a falta de pruebas humanas ya están superadas.
+
+## Publicación completada — 2026-10-28
+
+La autenticación oficial de Git terminó con salida 0. El reintento de git push -u origin main terminó con salida 0 y creó main en GitHub, siguiendo origin/main. git ls-remote confirmó a7f13c28e8f428b8c27df7c923c1ec34b78b0ad1. Una solicitud HTTP nueva sin credenciales a https://github.com/caesar-speec/reservas-laboratorio devolvió 200 y contenido con el nombre del repositorio: acceso público comprobado. Se publica este cierre documental mediante un commit adicional, sin reescribir historial. No se repitió la suite por cambios exclusivamente documentales. No se envió correo; su revisión y envío continúan pendientes del titular. Las aceptaciones humanas anteriores se conservan sin atribuir nuevas decisiones.

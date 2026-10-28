@@ -112,3 +112,9 @@ Publicación: todavía no ejecutada. No hay remoto configurado y se requiere con
 ## Continuación de publicación — 2026-10-28
 
 El usuario proporcionó y autorizó el destino https://github.com/caesar-speec/reservas-laboratorio. Se comprobó mediante git ls-remote que el remoto no tenía referencias y se configuró origin con esa URL. Historial local conservado: 63c0c77, 65ee4b5 y 70a8045. Trabajo realizado por el agente principal, sin subagentes. Se prepara la publicación de main; su resultado se registrará después de ejecutar el push. No se repitieron pruebas funcionales porque no cambió el código. No se envió correo ni se infirió una nueva aceptación humana.
+
+Resultado real del intento: git push -u origin main fue rechazado por GitHub con «Invalid username or token» y «Authentication failed». No se publicó ningún commit. Se inició git credential-manager github login --username caesar-speec --device --force; requiere completar la autenticación por el usuario. La conexión del conector GitHub no autentica automáticamente el cliente Git local. Publicación y comprobación de acceso continúan pendientes; commit documental local a7f13c2.
+
+## Publicación completada — 2026-10-28
+
+La autenticación oficial de Git terminó con salida 0. El reintento de git push -u origin main terminó con salida 0 y creó main en GitHub, siguiendo origin/main. git ls-remote confirmó a7f13c28e8f428b8c27df7c923c1ec34b78b0ad1. Una solicitud HTTP nueva sin credenciales a https://github.com/caesar-speec/reservas-laboratorio devolvió 200 y contenido con el nombre del repositorio: acceso público comprobado. Se publica este cierre documental mediante un commit adicional, sin reescribir historial. No se repitió la suite por cambios exclusivamente documentales. No se envió correo; su revisión y envío continúan pendientes del titular. Las aceptaciones humanas anteriores se conservan sin atribuir nuevas decisiones.
