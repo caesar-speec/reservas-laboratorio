@@ -134,3 +134,7 @@ Se creó realmente el commit `65ee4b5` en main, «feat: sistema local de reserva
 Verificación previa: 21 pruebas OK. La revisión del índice incluyó todos los archivos nuevos; git diff --cached --check detectó espacios finales y líneas vacías en las transcripciones originales etapa1.txt y etapa2.txt, conservadas sin alterar. No se incluyeron bases SQLite, cachés ni tmp/.
 
 Publicación: todavía no ejecutada. No hay remoto configurado y se requiere conexión de GitHub para crear o seleccionar el repositorio y verificar acceso. No se envió correo. La evidencia humana posterior está en evidencias/revision-humana.txt y su aceptación consta en DELEGACION.md; las menciones históricas a falta de pruebas humanas ya están superadas.
+
+## Continuación de publicación — 2026-10-28
+
+El usuario proporcionó y autorizó el destino https://github.com/caesar-speec/reservas-laboratorio. Se comprobó mediante git ls-remote que el remoto no tenía referencias y se configuró origin con esa URL. Historial local conservado: 63c0c77, 65ee4b5 y 70a8045. Trabajo realizado por el agente principal, sin subagentes. Se prepara la publicación de main; su resultado se registrará después de ejecutar el push. No se repitieron pruebas funcionales porque no cambió el código. No se envió correo ni se infirió una nueva aceptación humana.
