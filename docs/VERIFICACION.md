@@ -144,3 +144,7 @@ Resultado real del intento: git push -u origin main fue rechazado por GitHub con
 ## Publicación completada — 2026-10-28
 
 La autenticación oficial de Git terminó con salida 0. El reintento de git push -u origin main terminó con salida 0 y creó main en GitHub, siguiendo origin/main. git ls-remote confirmó a7f13c28e8f428b8c27df7c923c1ec34b78b0ad1. Una solicitud HTTP nueva sin credenciales a https://github.com/caesar-speec/reservas-laboratorio devolvió 200 y contenido con el nombre del repositorio: acceso público comprobado. Se publica este cierre documental mediante un commit adicional, sin reescribir historial. No se repitió la suite por cambios exclusivamente documentales. No se envió correo; su revisión y envío continúan pendientes del titular. Las aceptaciones humanas anteriores se conservan sin atribuir nuevas decisiones.
+
+## Limpieza de DECISIONES.md — 2026-10-28
+
+Por solicitud del usuario se eliminaron los marcadores de pendientes y la fila vacía de decisiones futuras en DECISIONES.md. Se resumieron las decisiones iniciales con referencias a su implementación final, se actualizó el estado de versionado/publicación y se corrigió la referencia a las comprobaciones humanas ya aportadas. No se inventaron comparaciones ni aprobaciones. Trabajo documental del agente principal, sin subagentes. Verificación: búsqueda de marcadores y git diff --check; no corresponde repetir pruebas funcionales al no cambiar código. No se solicita una nueva aceptación humana.
