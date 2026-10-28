@@ -1,0 +1,32 @@
+Python 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+Ejecutor: agente (ejecución automatizada)
+
+$ python -m unittest discover -s tests -v
+test_cli_error_y_ayuda (test_persistencia.PruebasPersistencia.test_cli_error_y_ayuda) ... ok
+test_persistencia_procesos_separados (test_persistencia.PruebasPersistencia.test_persistencia_procesos_separados) ... ok
+test_reabrir_conserva_activa_y_cancelada (test_persistencia.PruebasPersistencia.test_reabrir_conserva_activa_y_cancelada) ... ok
+test_cancelacion_conserva_datos (test_reservas.PruebasReservas.test_cancelacion_conserva_datos) ... ok
+test_cancelacion_inexistente (test_reservas.PruebasReservas.test_cancelacion_inexistente) ... ok
+test_cancelacion_libera_horario (test_reservas.PruebasReservas.test_cancelacion_libera_horario) ... ok
+test_cancelacion_repetida (test_reservas.PruebasReservas.test_cancelacion_repetida) ... ok
+test_consecutivas_disponibilidad_y_creacion (test_reservas.PruebasReservas.test_consecutivas_disponibilidad_y_creacion) ... ok
+test_disponibilidad_inicial (test_reservas.PruebasReservas.test_disponibilidad_inicial) ... ok
+test_disponibilidad_limites_y_conflicto (test_reservas.PruebasReservas.test_disponibilidad_limites_y_conflicto) ... ok
+test_equipo_desconocido (test_reservas.PruebasReservas.test_equipo_desconocido) ... ok
+test_fechas_invalidas (test_reservas.PruebasReservas.test_fechas_invalidas) ... ok
+test_fechas_pasadas_y_duracion_sin_limites (test_reservas.PruebasReservas.test_fechas_pasadas_y_duracion_sin_limites) ... ok
+test_historial_ambos_estados (test_reservas.PruebasReservas.test_historial_ambos_estados) ... ok
+test_inicio_igual_fin (test_reservas.PruebasReservas.test_inicio_igual_fin) ... ok
+test_inicio_posterior_fin (test_reservas.PruebasReservas.test_inicio_posterior_fin) ... ok
+test_inventario_exacto (test_reservas.PruebasReservas.test_inventario_exacto) ... ok
+test_reserva_valida (test_reservas.PruebasReservas.test_reserva_valida) ... ok
+test_solicitantes_invalidos (test_reservas.PruebasReservas.test_solicitantes_invalidos) ... ok
+test_superposiciones (test_reservas.PruebasReservas.test_superposiciones) ... ok
+test_unidades_distintas (test_reservas.PruebasReservas.test_unidades_distintas) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 1.726s
+
+OK
+
+Salida: 0

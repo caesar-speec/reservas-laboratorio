@@ -1,0 +1,63 @@
+Python 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+Ejecutor: agente (ejecución automatizada)
+
+$ python app.py --db <BASE_TEMPORAL> --help
+usage: app.py [-h] [--db DB]
+              {inventario,disponibilidad,reservar,listar,cancelar} ...
+
+Reservas de equipos de laboratorio
+
+positional arguments:
+  {inventario,disponibilidad,reservar,listar,cancelar}
+    inventario          Consultar equipos
+    disponibilidad      Consultar un intervalo local de Córdoba
+    reservar            Crear una reserva activa
+    listar              Historial de reservas activas y canceladas
+    cancelar            Cancelar conservando el historial
+
+options:
+  -h, --help            show this help message and exit
+  --db DB               Ruta SQLite (por defecto data/reservas.db)
+Salida: 0; esperada: 0
+
+$ python app.py --db <BASE_TEMPORAL> inventario
+MIC-01: Microscopio digital
+MIC-02: Microscopio digital
+OSC-01: Osciloscopio
+MUL-01: Multímetro
+FUE-01: Fuente de alimentación
+Salida: 0; esperada: 0
+
+$ python app.py --db <BASE_TEMPORAL> disponibilidad MIC-01 2026-11-02T10:00 2026-11-02T11:00
+DISPONIBLE
+Salida: 0; esperada: 0
+
+$ python app.py --db <BASE_TEMPORAL> reservar MIC-01 Ana 2026-11-02T10:00 2026-11-02T11:00
+Reserva 1 creada: ACTIVA
+Salida: 0; esperada: 0
+
+$ python app.py --db <BASE_TEMPORAL> reservar MIC-01 Juan 2026-11-02T10:30 2026-11-02T11:30
+Error: El equipo ya tiene una reserva activa superpuesta.
+Salida: 1; esperada: 1
+
+$ python app.py --db <BASE_TEMPORAL> reservar MIC-01 María 2026-11-02T11:00 2026-11-02T12:00
+Reserva 2 creada: ACTIVA
+Salida: 0; esperada: 0
+
+$ python app.py --db <BASE_TEMPORAL> listar
+1 | MIC-01 | Ana | 2026-11-02T10:00 | 2026-11-02T11:00 | ACTIVA
+2 | MIC-01 | María | 2026-11-02T11:00 | 2026-11-02T12:00 | ACTIVA
+Salida: 0; esperada: 0
+
+$ python app.py --db <BASE_TEMPORAL> cancelar 1
+Reserva 1 cancelada: CANCELADA
+Salida: 0; esperada: 0
+
+$ python app.py --db <BASE_TEMPORAL> listar
+1 | MIC-01 | Ana | 2026-11-02T10:00 | 2026-11-02T11:00 | CANCELADA
+2 | MIC-01 | María | 2026-11-02T11:00 | 2026-11-02T12:00 | ACTIVA
+Salida: 0; esperada: 0
+
+$ python app.py --db <BASE_TEMPORAL> disponibilidad MIC-01 2026-11-02T10:00 2026-11-02T11:00
+DISPONIBLE
+Salida: 0; esperada: 0

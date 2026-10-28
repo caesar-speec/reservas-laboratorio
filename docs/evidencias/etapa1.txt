@@ -1,0 +1,15 @@
+﻿python.exe : test_disponibilidad_inicial (test_reservas.PruebasReservas.test_disponibilidad_inicial) ... ok
+En línea: 3 Carácter: 1
++ & (Join-Path $env:TEMP 'reservas-python-3.12.10\python.exe') -m unitt ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_disponibil...inicial) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_disponibilidad_limites_y_conflicto (test_reservas.PruebasReservas.test_disponibilidad_limites_y_conflicto) ... ok
+test_inventario_exacto (test_reservas.PruebasReservas.test_inventario_exacto) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.095s
+
+OK
+
