@@ -1,7 +1,5 @@
 # Decisiones
 
-Este registro distingue requisitos documentados y hechos de la estructura de decisiones humanas todavía sin registrar. Las alternativas indicadas como PENDIENTE no se consideran evaluadas. Las consecuencias previstas no son resultados de pruebas.
-
 | ID | Fecha | Decisión técnica o restricción documentada | Alternativas consideradas | Motivo documentado | Consecuencias previstas o estado comprobado | Fuente | Revisión humana |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | D-01 | 2026-10-28 | Utilizar Python, SQLite y unittest | PENDIENTE | Requisito del proyecto en AGENTS.md | La implementación y las pruebas futuras deben respetar esas herramientas; versiones PENDIENTE | [AGENTS.md](../AGENTS.md) | PENDIENTE |
