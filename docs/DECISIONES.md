@@ -1,7 +1,5 @@
 # Decisiones
 
-Este registro reúne las decisiones documentadas del proyecto. Las alternativas técnicas fueron analizadas por el agente; las consecuencias previstas se distinguen de los resultados comprobados.
-
 ## Decisiones de la estructura inicial — 2026-10-28
 
 | ID | Decisión o restricción | Estado y referencia actual |
